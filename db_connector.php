@@ -26,3 +26,7 @@ $result->execute();
 $data = $result->fetchAll(PDO::FETCH_ASSOC); // 리스트 형태로 가져와라(PDO의 한 열 씩 방식으로)
 echo json_encode($data);
 ?>
+
+SELECT DATE_FORMAT(birth, '%Y년%m월%d일') as '생년월일'FROM `user` WHERE address = '부산';
+SELECT TIMESTAMPDIFF(YEAR, birth, now()) as "나이" FROM `user` WHERE address = "부산";
+INSERT INTO `user` (`id`, `email`, `password`, `phone`, `name`, `gender`, `address`, `birth`) VALUES (NULL, 'zxcv@gmail.com', '1234', '01011223344', '전두광', 'man', '대전', '1965-01-02');
