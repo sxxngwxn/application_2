@@ -1,4 +1,4 @@
-1. [] HTML 레이아웃 만들기
+1. [✔] HTML 레이아웃 만들기
 2. [] PHP 동적 레이아웃 만들기
 3. [✔] DB 생성 
 4. [✔] DB 연동
@@ -6,5 +6,3 @@
 6. [] 라우터 만들기
 
 [✔, ❌]
-
-INSERT INTO `user` (`id`, `email`, `password`, `phone`, `name`) VALUES (NULL, 'insta@gmail.com', '1234', '01012345678', '인숙타');
