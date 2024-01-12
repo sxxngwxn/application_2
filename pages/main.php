@@ -92,3 +92,9 @@
             ?>
         </div>
     </div>
+
+    <div id="create-button">
+        <a href="create">
+            <button type="button" class="btn btn-primary">새 게시글</button>
+        </a>
+    </div>

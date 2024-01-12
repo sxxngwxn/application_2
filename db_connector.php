@@ -20,9 +20,9 @@ try {
 }
 
 
-$query = "SELECT * FROM `user`";
-$result = $db->prepare($query);
-$result->execute();
-$data = $result->fetchAll(PDO::FETCH_ASSOC); // 리스트 형태로 가져와라(PDO의 한 열 씩 방식으로)
-echo json_encode($data);
+// $query = "SELECT * FROM `user`";
+// $result = $db->prepare($query);
+// $result->execute();
+// $data = $result->fetchAll(PDO::FETCH_ASSOC); // 리스트 형태로 가져와라(PDO의 한 열 씩 방식으로)
+// echo json_encode($data);
 ?>

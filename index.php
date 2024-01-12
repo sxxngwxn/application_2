@@ -1,4 +1,6 @@
 <?php
+include("db_connector.php");
+
 $uri = explode("?", $_SERVER['REQUEST_URI']);
 $resource = explode('/', $uri[0]);
 
@@ -17,11 +19,20 @@ switch ($uri[0]) {
         $page = 'pages/feedDetail.php';
         break;
     
+    case '/create':
+        $page = 'pages/createPost.php';
+        break;
+
     case '/api/feeds':
         $page = 'pages/feedListApi.php';
         break;
+
+    case '/api/feeds/create':
+        $page = 'pages/createFeedApi.php';
+        break;
+
     default:
-        # code...
+        $page = "pages/Notfound.php";
         break;
 }
 

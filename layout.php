@@ -27,6 +27,17 @@
         border-radius: 15px 0px 15px 15px ;
         max-width: 55%;
     }
+
+    #create-button {
+        position: fixed; /* 화면을 따라다니며 위치고정 */
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #notfounderror{
+        display: flex;
+        justify-content: center;
+    }
 </style>
 <body>
     <!--네비게이션 영역-->
