@@ -4,7 +4,7 @@ include("db_connector.php");
 $uri = explode("?", $_SERVER['REQUEST_URI']);
 $resource = explode('/', $uri[0]);
 
-echo $uri[0];
+// echo $uri[0];
 
 $path1 = isset($resource[1]) ? $resource[1] :null;
 $path2 = isset($resource[2]) ? $resource[1] :null;
@@ -29,10 +29,6 @@ switch ($uri[0]) {
 
     case '/api/feeds/create':
         $page = 'pages/createFeedApi.php';
-        break;
-
-    case '/api/feeds/test':
-        $page = 'pages/feedList.php';
         break;
 
     default:
