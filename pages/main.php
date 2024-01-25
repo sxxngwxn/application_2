@@ -98,3 +98,33 @@
             <button type="button" class="btn btn-primary">새 게시글</button>
         </a>
     </div>
+
+
+    <!--Script-->
+    <script>
+        const d1 = document.getElementById("create-button");
+        const d2 = $('#create-button');
+
+        function getData() {
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/posts',
+                type: 'get',
+                success: (response)=> {
+                    console.log('data :', response);
+                }
+            })
+        }
+
+        function getFeedData() {
+            $.ajax({
+                url: 'localhost/api/feeds/test',
+                type: 'get',
+                success: (response)=>{
+                    console.log('test feed date : ', response);
+                }
+            })
+        }
+
+        getData()
+        getFeedData()
+    </script>

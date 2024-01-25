@@ -31,6 +31,10 @@ switch ($uri[0]) {
         $page = 'pages/createFeedApi.php';
         break;
 
+    case '/api/feeds/test':
+        $page = 'pages/feedList.php';
+        break;
+
     default:
         $page = "pages/Notfound.php";
         break;
